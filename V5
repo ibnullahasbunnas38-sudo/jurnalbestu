@@ -1,0 +1,1513 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurnal Mengajar - SMP Negeri 1 Besuk</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            box-sizing: border-box;
+        }
+        .logo-animation {
+            animation: pulse 2s infinite;
+        }
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+        .fade-in {
+            animation: fadeIn 0.5s ease-in;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-blue-50 to-green-50 min-h-screen">
+    <!-- Header -->
+    <header class="bg-white shadow-lg border-b-4 border-green-500">
+        <div class="container mx-auto px-4 py-6">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-4">
+                    <div class="logo-animation bg-gradient-to-br from-blue-600 to-green-600 text-white w-16 h-16 rounded-full flex items-center justify-center font-bold text-xl">
+                        SMP
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-gray-800">SMP Negeri 1 Besuk</h1>
+                        <p class="text-sm text-gray-600 italic">"Berprestasi berdasarkan iman dan taqwa serta berwawasan lingkungan"</p>
+                    </div>
+                </div>
+                <div class="text-right text-sm text-gray-600">
+                    <p>Jl. Raya Besuk, Kec. Besuk, Kab. Probolinggo</p>
+                    <p>Telp: 0335-841640 | Email: smpn1besuk@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Login Form -->
+    <div id="loginSection" class="container mx-auto px-4 py-8">
+        <div class="max-w-md mx-auto bg-white rounded-lg shadow-xl p-8 fade-in">
+            <h2 class="text-2xl font-bold text-center text-gray-800 mb-6">Login Jurnal Mengajar</h2>
+            <form id="loginForm" class="space-y-4">
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Pilih Nama</label>
+                    <select id="userName" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                        <option value="">-- Pilih Nama --</option>
+                        <option value="Administrator">Administrator</option>
+                        <option value="IFDLALI, S.Si., M.Pd.">IFDLALI, S.Si., M.Pd.</option>
+                        <option value="Drs. MASTO">Drs. MASTO</option>
+                        <option value="SRI PUJI ASTUTI, M.Pd.">SRI PUJI ASTUTI, M.Pd.</option>
+                        <option value="Dra. KANTI SRI LESTARI">Dra. KANTI SRI LESTARI</option>
+                        <option value="FITRI YANUR, M. Pd">FITRI YANUR, M. Pd</option>
+                        <option value="Dra. APRI SURYANI">Dra. APRI SURYANI</option>
+                        <option value="FIRNALITA INDRAYANI, S.Pd.">FIRNALITA INDRAYANI, S.Pd.</option>
+                        <option value="TATIK WIJAYANTI, S.Pd.">TATIK WIJAYANTI, S.Pd.</option>
+                        <option value="GATOT SANTOSO, S.Pd.">GATOT SANTOSO, S.Pd.</option>
+                        <option value="ENI SUFITRI S. S.Pd.">ENI SUFITRI S. S.Pd.</option>
+                        <option value="WIWIK WIDYAWATI, S.Pd.">WIWIK WIDYAWATI, S.Pd.</option>
+                        <option value="MUH. TAUFIQUL ANWAR, S.Pd.">MUH. TAUFIQUL ANWAR, S.Pd.</option>
+                        <option value="GINA UTARI ELGANI, S.Pd.">GINA UTARI ELGANI, S.Pd.</option>
+                        <option value="YUSMAN HADI KURNIAWAN, S.Pd.">YUSMAN HADI KURNIAWAN, S.Pd.</option>
+                        <option value="MARFU'A, S.Pd.">MARFU'A, S.Pd.</option>
+                        <option value="SAIFUL BAHRI, S.Pd.">SAIFUL BAHRI, S.Pd.</option>
+                        <option value="SAHUR, S.Ag.">SAHUR, S.Ag.</option>
+                        <option value="AINUL INAYAH, S.Ag.">AINUL INAYAH, S.Ag.</option>
+                        <option value="HERU NOOR WAKHID, S. Pd">HERU NOOR WAKHID, S. Pd</option>
+                        <option value="LINDARI HERLININGSIH, S. Pd.I">LINDARI HERLININGSIH, S. Pd.I</option>
+                        <option value="M. HEPNI, S. Pd.I">M. HEPNI, S. Pd.I</option>
+                        <option value="TANTI KRISDIANA, S. Pd">TANTI KRISDIANA, S. Pd</option>
+                        <option value="ENI KUSTANTINI, S. Pd">ENI KUSTANTINI, S. Pd</option>
+                        <option value="WAHYUNING RAHAYU, S. Pd">WAHYUNING RAHAYU, S. Pd</option>
+                        <option value="ELSA KURNIA DWI SEPTIANA, S. Pd">ELSA KURNIA DWI SEPTIANA, S. Pd</option>
+                        <option value="RIVA INDRIYANA, S. Pd">RIVA INDRIYANA, S. Pd</option>
+                        <option value="SLAMET HIDAYAT, S.E">SLAMET HIDAYAT, S.E</option>
+                        <option value="ANDI WIJAYAKUSUMA, S.Kom">ANDI WIJAYAKUSUMA, S.Kom</option>
+                        <option value="HALIMATUS SA'DIYAH, S. Pd">HALIMATUS SA'DIYAH, S. Pd</option>
+                        <option value="IRWAN NUGROHO, S. Pd">IRWAN NUGROHO, S. Pd</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Password</label>
+                    <input type="password" id="password" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                </div>
+                <button type="submit" class="w-full bg-gradient-to-r from-blue-600 to-green-600 text-white py-2 px-4 rounded-md hover:from-blue-700 hover:to-green-700 transition duration-300 font-medium">
+                    Masuk
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Teacher Dashboard -->
+    <div id="teacherDashboard" class="container mx-auto px-4 py-8 hidden">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Jurnal Mengajar Harian</h2>
+            <div class="flex items-center space-x-4">
+                <button onclick="showStudentRecap()" class="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700 transition duration-300">
+                    Rekap Siswa
+                </button>
+                <span id="currentDateTime" class="text-sm text-gray-600 bg-white px-3 py-1 rounded-full shadow"></span>
+                <button onclick="logout()" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-xl p-6 fade-in">
+            <form id="journalForm" class="space-y-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Nama Guru</label>
+                        <input type="text" id="teacherName" class="w-full px-3 py-2 border border-gray-300 rounded-md bg-gray-100" readonly>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Mata Pelajaran</label>
+                        <select id="subject" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required>
+                            <option value="">-- Pilih Mata Pelajaran --</option>
+                            <option value="Pendidikan Agama">Pendidikan Agama</option>
+                            <option value="Pancasila">Pancasila</option>
+                            <option value="Bahasa Indonesia">Bahasa Indonesia</option>
+                            <option value="Matematika">Matematika</option>
+                            <option value="Ilmu Pengetahuan Alam">Ilmu Pengetahuan Alam</option>
+                            <option value="Ilmu Pengetahuan Sosial">Ilmu Pengetahuan Sosial</option>
+                            <option value="Bahasa Inggris">Bahasa Inggris</option>
+                            <option value="PJOK">PJOK</option>
+                            <option value="Informatika">Informatika</option>
+                            <option value="Seni, Budaya & Prakarya">Seni, Budaya & Prakarya</option>
+                            <option value="Bahasa Daerah">Bahasa Daerah</option>
+                            <option value="Bimbingan Konseling">Bimbingan Konseling</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Kelas</label>
+                        <select id="class" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" required onchange="loadStudentAttendance()">
+                            <option value="">-- Pilih Kelas --</option>
+                            <option value="7A">7A</option>
+                            <option value="7B">7B</option>
+                            <option value="7C">7C</option>
+                            <option value="7D">7D</option>
+                            <option value="7E">7E</option>
+                            <option value="8A">8A</option>
+                            <option value="8B">8B</option>
+                            <option value="8C">8C</option>
+                            <option value="8D">8D</option>
+                            <option value="8E">8E</option>
+                            <option value="9A">9A</option>
+                            <option value="9B">9B</option>
+                            <option value="9C">9C</option>
+                            <option value="9D">9D</option>
+                            <option value="9E">9E</option>
+                            <option value="9F">9F</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Jam Pelajaran (boleh pilih lebih dari satu)</label>
+                        <div class="flex flex-wrap gap-4 p-3 border border-gray-300 rounded-md bg-gray-50">
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="periods" value="1" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm">1</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="periods" value="2" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm">2</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="periods" value="3" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm">3</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="periods" value="4" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm">4</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="periods" value="5" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm">5</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="periods" value="6" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm">6</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="periods" value="7" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm">7</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer">
+                                <input type="checkbox" name="periods" value="8" class="text-blue-600 focus:ring-blue-500">
+                                <span class="text-sm">8</span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Absensi Siswa -->
+                <div id="attendanceSection" class="hidden">
+                    <label class="block text-sm font-medium text-gray-700 mb-3">Absensi Siswa</label>
+                    <div class="bg-gray-50 rounded-lg p-4 max-h-64 overflow-y-auto">
+                        <div id="studentList" class="space-y-2">
+                            <!-- Daftar siswa akan dimuat di sini -->
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Materi Pembelajaran</label>
+                    <textarea id="material" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="3" placeholder="Tuliskan materi yang diajarkan..." required></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Kegiatan Pembelajaran</label>
+                    <textarea id="activities" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="3" placeholder="Deskripsikan kegiatan pembelajaran..." required></textarea>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Upload Aktivitas Kelas (Foto)</label>
+                    <div class="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center hover:border-blue-400 transition-colors">
+                        <input type="file" id="classPhoto" accept="image/*" class="hidden" onchange="handlePhotoUpload(event)">
+                        <div id="photoPreview" class="hidden">
+                            <img id="previewImage" class="max-w-full h-32 mx-auto rounded-lg mb-2" alt="Preview">
+                            <p class="text-sm text-gray-600 mb-2">Foto berhasil dipilih</p>
+                            <button type="button" onclick="removePhoto()" class="text-red-500 text-sm hover:text-red-700">Hapus Foto</button>
+                        </div>
+                        <div id="photoUploadArea">
+                            <svg class="mx-auto h-12 w-12 text-gray-400 mb-2" stroke="currentColor" fill="none" viewBox="0 0 48 48">
+                                <path d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <p class="text-sm text-gray-600 mb-2">Klik untuk upload foto aktivitas kelas</p>
+                            <button type="button" onclick="document.getElementById('classPhoto').click()" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300 text-sm">
+                                Pilih Foto
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Tanda Tangan Digital</label>
+                    <div class="border border-gray-300 rounded-lg p-4 bg-white">
+                        <canvas id="signatureCanvas" width="400" height="150" class="border border-gray-200 rounded w-full cursor-crosshair" style="touch-action: none;"></canvas>
+                        <div class="flex justify-between items-center mt-2">
+                            <p class="text-xs text-gray-500">Tanda tangan di area di atas</p>
+                            <button type="button" onclick="clearSignature()" class="text-red-500 text-sm hover:text-red-700">
+                                Hapus Tanda Tangan
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <label class="block text-sm font-medium text-gray-700 mb-2">Catatan/Kendala</label>
+                    <textarea id="notes" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" rows="2" placeholder="Catatan tambahan atau kendala yang dihadapi (opsional)"></textarea>
+                </div>
+
+                <button type="submit" class="w-full bg-gradient-to-r from-green-600 to-blue-600 text-white py-3 px-4 rounded-md hover:from-green-700 hover:to-blue-700 transition duration-300 font-medium">
+                    Simpan Jurnal
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="adminDashboard" class="container mx-auto px-4 py-8 hidden">
+        <div class="flex justify-between items-center mb-6">
+            <h2 class="text-2xl font-bold text-gray-800">Dashboard Administrator</h2>
+            <div class="flex items-center space-x-4">
+                <div id="syncStatus" class="text-sm px-3 py-1 rounded-full bg-green-100 text-green-800">
+                    ✓ Tersinkron
+                </div>
+                    <button onclick="manualSync()" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300">
+                        Sinkron Manual
+                    </button>
+                    <button onclick="testScriptConnection()" title="Tes koneksi ke Apps Script" class="bg-indigo-600 text-white px-3 py-2 rounded-md hover:bg-indigo-700 transition duration-300">
+                        Test Koneksi
+                    </button>
+                    <button onclick="sendTeacherListToScript()" title="Kirim daftar guru ke spreadsheet" class="bg-blue-500 text-white px-3 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                        Kirim Daftar Guru
+                    </button>
+                    <button onclick="sendStudentDataToScript()" title="Kirim data siswa ke spreadsheet" class="bg-yellow-500 text-white px-3 py-2 rounded-md hover:bg-yellow-600 transition duration-300">
+                        Kirim Data Siswa
+                    </button>
+                <div class="flex space-x-2">
+                    <button onclick="openSpreadsheet('Data Jurnal')" class="bg-blue-600 text-white px-3 py-2 rounded-md hover:bg-blue-700 transition duration-300 text-sm">
+                        Data Jurnal
+                    </button>
+                    <button onclick="openSpreadsheet('Rekap Guru')" class="bg-purple-600 text-white px-3 py-2 rounded-md hover:bg-purple-700 transition duration-300 text-sm">
+                        Rekap Guru
+                    </button>
+                    <button onclick="openSpreadsheet('Rekap Siswa')" class="bg-orange-600 text-white px-3 py-2 rounded-md hover:bg-orange-700 transition duration-300 text-sm">
+                        Rekap Siswa
+                    </button>
+                </div>
+                <button onclick="logout()" class="bg-red-500 text-white px-4 py-2 rounded-md hover:bg-red-600 transition duration-300">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-4 gap-6 mb-6">
+            <div class="bg-white rounded-lg shadow-xl p-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Total Jurnal Hari Ini</h3>
+                <p id="totalJournals" class="text-3xl font-bold text-blue-600">0</p>
+                <p class="text-sm text-gray-500 mt-1">Jurnal tersimpan</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-xl p-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Guru Aktif</h3>
+                <p id="activeTeachers" class="text-3xl font-bold text-green-600">0</p>
+                <p class="text-sm text-gray-500 mt-1">dari 30 guru</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-xl p-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Rata-rata Kehadiran</h3>
+                <p id="averageAttendance" class="text-3xl font-bold text-purple-600">0%</p>
+                <p class="text-sm text-gray-500 mt-1">siswa hadir</p>
+            </div>
+            <div class="bg-white rounded-lg shadow-xl p-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Status Sinkronisasi</h3>
+                <p id="syncedJournals" class="text-3xl font-bold text-orange-600">0</p>
+                <p class="text-sm text-gray-500 mt-1">jurnal tersinkron</p>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-lg shadow-xl p-6 fade-in">
+            <h3 class="text-lg font-semibold text-gray-800 mb-4">Data Jurnal Mengajar Hari Ini</h3>
+            <div class="overflow-x-auto">
+                <table class="min-w-full table-auto">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">No</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Guru</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Tanggal</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Kelas</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Jam</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Materi</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Status</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase">Aksi</th>
+                        </tr>
+                    </thead>
+                    <tbody id="journalTableBody" class="bg-white divide-y divide-gray-200">
+                        <!-- Data akan dimuat di sini -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-sm mx-4 fade-in">
+            <div class="text-center">
+                <div class="text-green-500 text-4xl mb-4">✓</div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-2">Berhasil!</h3>
+                <p id="successMessage" class="text-gray-600 mb-4"></p>
+                <button onclick="closeModal()" class="bg-green-600 text-white px-4 py-2 rounded-md hover:bg-green-700 transition duration-300">
+                    OK
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Recap Modal -->
+    <div id="studentRecapModal" class="fixed inset-0 bg-black bg-opacity-50 hidden items-center justify-center z-50">
+        <div class="bg-white rounded-lg p-6 max-w-4xl mx-4 fade-in max-h-[90vh] overflow-y-auto">
+            <div class="flex justify-between items-center mb-6">
+                <h3 class="text-xl font-bold text-gray-800">Rekap Kehadiran Siswa</h3>
+                <button onclick="closeStudentRecap()" class="text-gray-500 hover:text-gray-700 text-2xl">×</button>
+            </div>
+            
+            <!-- Filter Section -->
+            <div class="mb-6 bg-gray-50 p-4 rounded-lg">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Filter Kelas</label>
+                        <select id="recapClassFilter" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" onchange="filterStudentRecap()">
+                            <option value="">Semua Kelas</option>
+                            <option value="7A">7A</option>
+                            <option value="7B">7B</option>
+                            <option value="7C">7C</option>
+                            <option value="7D">7D</option>
+                            <option value="7E">7E</option>
+                            <option value="8A">8A</option>
+                            <option value="8B">8B</option>
+                            <option value="8C">8C</option>
+                            <option value="8D">8D</option>
+                            <option value="8E">8E</option>
+                            <option value="9A">9A</option>
+                            <option value="9B">9B</option>
+                            <option value="9C">9C</option>
+                            <option value="9D">9D</option>
+                            <option value="9E">9E</option>
+                            <option value="9F">9F</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label class="block text-sm font-medium text-gray-700 mb-2">Filter Tanggal</label>
+                        <input type="date" id="recapDateFilter" class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500" onchange="filterStudentRecap()">
+                    </div>
+                    <div class="flex items-end">
+                        <button onclick="resetRecapFilter()" class="bg-gray-500 text-white px-4 py-2 rounded-md hover:bg-gray-600 transition duration-300">
+                            Reset Filter
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Summary Cards -->
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
+                <div class="bg-green-100 p-4 rounded-lg text-center">
+                    <h4 class="text-sm font-medium text-green-800">Total Hadir</h4>
+                    <p id="totalHadir" class="text-2xl font-bold text-green-600">0</p>
+                </div>
+                <div class="bg-yellow-100 p-4 rounded-lg text-center">
+                    <h4 class="text-sm font-medium text-yellow-800">Total Ijin</h4>
+                    <p id="totalIjin" class="text-2xl font-bold text-yellow-600">0</p>
+                </div>
+                <div class="bg-blue-100 p-4 rounded-lg text-center">
+                    <h4 class="text-sm font-medium text-blue-800">Total Sakit</h4>
+                    <p id="totalSakit" class="text-2xl font-bold text-blue-600">0</p>
+                </div>
+                <div class="bg-red-100 p-4 rounded-lg text-center">
+                    <h4 class="text-sm font-medium text-red-800">Total Alpha</h4>
+                    <p id="totalAlpha" class="text-2xl font-bold text-red-600">0</p>
+                </div>
+            </div>
+
+            <!-- Detailed Table -->
+            <div class="overflow-x-auto">
+                <table class="min-w-full table-auto border border-gray-200">
+                    <thead class="bg-gray-50">
+                        <tr>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase border-b">No</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase border-b">Nama Siswa</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase border-b">Kelas</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase border-b">Tanggal</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase border-b">Mata Pelajaran</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase border-b">Status</th>
+                            <th class="px-4 py-2 text-left text-xs font-medium text-gray-500 uppercase border-b">Jam</th>
+                        </tr>
+                    </thead>
+                    <tbody id="studentRecapTableBody" class="bg-white divide-y divide-gray-200">
+                        <!-- Data akan dimuat di sini -->
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- Export Button -->
+            <div class="mt-6 text-center">
+                <button onclick="exportStudentRecap()" class="bg-green-600 text-white px-6 py-2 rounded-md hover:bg-green-700 transition duration-300">
+                    Export ke CSV
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    // Configuration (spreadsheet and Apps Script deploy URL)
+    const SPREADSHEET_ID = '1-B-f-LIyl1uBT-xsWLNs3pOK0CLfspKD_CK0YEoYiYk';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwkYP7S4oSxKFymNygDuIF0IOa-56Kw1ZSYiLa7mfaJfQ4KlD2uqvmehB4AJyQWgXDG2w/exec';
+        
+        // Data storage
+        let currentUser = null;
+        let journalData = JSON.parse(localStorage.getItem('journalData')) || [];
+        
+        // Data siswa per kelas
+        const studentData = {
+            '7A': ['AHMAD AFFANI', 'Ahmad Hilmi Zakariya', 'ALIEF BERKAH RAMADHAN ASSGHAF', 'ALIKA ZAHRA RAMADHANI', 'ANA AZIZA', 'DAYUS HAFIN KURNIAGA', 'DIMAS MAULANA', 'FARIENA AISYAHRANI', 'FELISA DWI AYU APRILIANTI', 'INAYATUR RIZQIYAH MAULA', 'INTAN PERMATA SARI', 'IQBAL FIRMAN SYAH', 'ISTIQLAL ABDILLAH ASY SYA\'BANI', 'KEYZHA ALINA ZAHRA', 'MOCH MALIK AQIL SYARIFULLAH', 'MOCH. ZAINULLAH', 'MOH. FARHAN SAPUTRA', 'MOH. HASAN', 'MOHAMMAD RIZAM MAULANA PUTRA', 'MUHAMMAD FIKI HARIYANTO', 'MUHAMMAD FIRMAN SYAH', 'MUHAMMAD HILAL KIROMI', 'MUHAMMAD IHSAN FAUZI', 'Muhammad Nufal', 'NAYLA SALWA FIRDAUSIYAH', 'NURIL DUWI INSANI', 'OKTAVIA ARIA PUTRI', 'RATU BALQIS', 'SILVIA SYAFA\'ATUN MUNAWAROH', 'Wulan Herlina Sa\'baniah', 'ZAHRA PUTRI DAVINA'],
+            '7B': ['ABD QHOFOR', 'ABDUL MALIK MADHANI', 'ABID FADIL ABYAN', 'AHMAD IRSYADUL IRGIANSYAH', 'AHMAD NOVAL PRATAMA', 'AHMAD REYHAN MAULIDIN', 'AHMAD ZAINI', 'Aminatus Zahro', 'Azzyfatil Azzyfah', 'BAUTIS BIAN AZZAMANI', 'BOY AHMAD DAFIAN', 'DINDA AYUNDA DEWI', 'DURANI ZAHIRA IRDINA', 'DWI ANALISA PUTRI', 'DZAHRATUL JENNAH', 'Hafidul Ahkam', 'KHORIDATUL ABIDAH', 'Moh. Fadil', 'MOH. HAKIM KURNIAWAN', 'MOH. RENDY RAHMANDA PUTRA', 'MOHAMMAD ALBI SETIAWAN', 'Mohammad Alif Ibadillah', 'MUHAMMAD MAULIDIL MAULA', 'MUHAMMAD NUR RISQI', 'MUHAMMAD RAIHAN UBAIDILLAH', 'Nisa Azzakirah', 'NURUL QOMARIYAH', 'REIVEN VAN HOUTEN', 'ROMADHONIYAH LAILATUL FARHANAH', 'SAMSUL ARIL', 'SITTI ROLISA CIKA AULIYA', 'Sri Wulandari'],
+            '7C': ['ACHMAD GEFIN RULIANSYAH', 'ALFIN FIKRI H. M', 'ANDITA RENISYA PUTRI', 'ANGGI DWI PUTRA', 'ATHOILLAH RIFLI UBAIDILLAH', 'DENDI SAPUTRA HARIYADI', 'Diah Ayu Vitaloka', 'FAIQOTUL HUSNA', 'FIKAL MAULANA ABDILLAH', 'IKHSAN CHANDRA SAPUTRA', 'LOVEEKA AZZAHRA', 'MOCH. NANDITO AULIA PRATAMA', 'MOH SONI', 'MOH. FARHAN LAILIL FATRAH', 'MOH. ILYAS BAHARUDIN', 'MUH. ABDI MAULANA', 'Muhammad Aldi Rizaldi', 'Muhammad Habibillah', 'MUHAMMAD HABIBULLOH', 'MUHAMMAD RAMADANI', 'MUHAMMAD RIFKI MUHTARULLAH', 'Muhammad Usi', 'NUR MUHAMMAD HIDAYATULLAH', 'NUR RAHMAD HIDAYATULLAH', 'PUTRI LAILATUL MUSDHALIFAH', 'SERLI NURUL AZIZEH', 'Sifa Nur Faizah', 'SITI FANIA AZZRILIA SUCININGTYAS', 'SITTI NAFISYAH', 'WIRLIANDIANI', 'Yoga Prastyawan'],
+            '7D': ['ABDUL KHOLIK', 'ADI SAPUTRA', 'ANNY SYIFA`U ARDHINA', 'Fadillah Nurul Qur\'ani Almy', 'FIKA AULIA RAMADANI', 'Fira Anggraini', 'HABIBUR ROHIM', 'ILZAM KHOIRON MAULIDI', 'ISMI FAIQOTUL HUSNA', 'M. RAFFI PUTRA FINJAYA', 'MARYAM ZULFA AL FASI', 'MAULANA AFIL DWI SAPUTRA', 'MOC.WILDA NUR UBAIDILLAH', 'Moch. Arman Rifael', 'MOH REZA DEFI PUTRA', 'MOH. FAREL FERDIKA PRATAMA', 'MOHAMMAD ANDIKA PRATAMA', 'MUHAMMAD ADIS JA\'FAR', 'MUHAMMAD EVAN EVENDI', 'MUHAMMAD FADIL', 'MUHAMMAD HASAN RUSDI', 'Muhammad Ikhsan Putra Hariyanto', 'MUHAMMAD RIZAL', 'NURENZA DWI TAUSYA', 'ROIHAN SHOHIBUL ULUM', 'ROSITA', 'SAFIRA ULYA', 'SHOHIBUL ULUM', 'SITI NUR RAISA', 'WIDIANA FARINDIACH ENGGAR', 'YULIANA PUTRI MAUFIROH', 'Zulfi Muhammad Irzami'],
+            '7E': ['AHMAD HADIQ HIDAYATULLAH', 'AHMAD RIZAL FIKRI', 'Aprilia Eka Fadila', 'BUDIANTO', 'DARRA ZAHIRAH SALSABILA', 'DAVIN NUR WILDAN', 'DENIS YUDHISTIRA RAMADHAN', 'FEBY YANTI', 'HAFIDHAH NUR FADHILAH', 'HAIKAL FIKRI', 'HALIMATUS SA\'DIYAH', 'HIBTINIA AMORA NOVELA HERMAWAN', 'KHOLIFAH INDRAYATI', 'KIRANA TALITA AZZAHRA', 'M. RAFFA PUTRA FINJAYA', 'Moch. Ilham Saputra', 'MOH MAULANA AFAN AZIDAN', 'MOH. AHSAN QUMARUZZAMAN', 'MOH. RAYHAN FAHIRUS PRATAMA', 'MOHAMMAD ARIK SAPUTRA', 'MUHAMMAD IQBAL MAULANA FIRMANSAH', 'MUHAMMAD NUR HAFIDZ', 'MUHAMMAD RIKO MAULANA LILLAH', 'MUHAMMAD VAREL ZAINILLAH', 'MUHAMMAD ZAINUN FAHRI', 'NUR FADILA RAMADANI', 'NUR FAIZAH', 'Nur Rani', 'RAHMAT EFENDI', 'SYASYA LIAN NUR SELINA VENELUVE', 'TRISULA HERDIAN MARLYONO'],
+            '8A': ['ABDUL WAHID ATTAMIMI', 'ACHMAD NOVEL SUCI HIDAYAT', 'ADITYA RAIHAN AGUNG PRATAMA', 'AHMAD DANIL', 'Ahmad Julianto', 'ALFYAN MAULANA SAPUTRA', 'Bayu Bimantara Putra Harso', 'Egi Aprilio Putra', 'FAIQOTUL HUSNA', 'GEMILANG CAHYA WILATIKTA', 'JANET FAJAR SURYANI', 'MOCH ABDUL HADI', 'MOCH RIZKY SYAIFULLAH', 'MOCH. KAFIL', 'MOCH. RANDIS OKTARISQIANSAH', 'MOH ADITYA ROMADHONI', 'Moh. Malik Afdillah', 'MUH. NOVAL SUCI HIDAYAT', 'MUHAMAD EBY FIRDAUS', 'Muhammad Agil Ardiansyah', 'MUHAMMAD DARVIN PUTRA EFENDI', 'MUHAMMAD FADIL', 'Muhammad Jailani', 'Muhammad Vian Pratama', 'Nafisa Elok Nur Ramadhani', 'NANDA RIZKI KURNIAWAN', 'NOFITA NUR FAIZAH', 'NURIL HASANAH', 'Raeynenda Nur Enda', 'Ridho Aqsa', 'RIMA DATUL HUSNA', 'SASKIYA RAJABIA', 'WARDANA SUKMA', 'YULIANA NOFA NING ZAHRAH'],
+            '8B': ['ABDUL WAFI ANSORI', 'AHMAD FAIZIN', 'AISYATUL MAUDI DWI FEBRIANA', 'ANDINI AGUSTIN', 'Aurin Ayulia', 'Devin Verdiansyah', 'FAIKATUL HUSNA', 'Fitzal Afzal Jamil', 'GALIH DWI HIDAYAT ROHMATULLAH', 'Gilang Andrean', 'Gilang Iskandar', 'Icha Anggita Mustika', 'KENZIE NAUFAL ARIFIN PUTRA', 'Maulana Babul Ibrahim', 'MOH FASHA', 'MOH. DAFFA HAFIS FIRDAUS', 'Moh. Farel Kava Sani Saputra', 'MOH. HAIRUL ADAM', 'MOH. RAMA ADITIYA PRATAMA', 'MOH.FERDIANSYAH RAMADHANI', 'Much. Ari Mahfud', 'MUHAMMAD FIRMAN', 'MUHAMMAD HAIKAL', 'Muhammad Reza Rahamadani', 'Nuris Zaman', 'RIAN FIRMANSYAH', 'SABRINA TRI AISYAH', 'Siladatul Hayriya', 'SITI AMELYA', 'Siti Qumairoh', 'Sulfan Nasrullah', 'SYAF RIDA WIJAYANTI', 'Wulansyifa Dewi Lestari', 'YULIA CAHYANI WULANDARI', 'ZULFATUN HASANAH', 'Zulvi Tantri Dwiyanti'],
+            '8C': ['Afiqa Tantriana', 'ANGELIA PUTRI DAVI', 'ANISA NOVARIYANTI', 'AULIA TIKA NAZILA', 'DAMAR DESCAL BIZAKY', 'DEWI KURNIAWATI ZAHRO', 'DIMAS RIZQON JADID', 'FALA DUWISAFIRA', 'HILDAN WAHYU AZZAMANI', 'Ilham Ramadhani', 'Jamilatul Farhana', 'KIKI KESUMA', 'M Andika Andrean', 'M. IQYAN ZAHIR HIBRIZI', 'M. Yoga Saputra', 'MOH FERY IRAWAN', 'MOH. FEBRIAN SYAH', 'Moh. Rizki Aditia', 'MOH.ZAINUL HASAN', 'MOHAMMAD MAULANA HAKIKY', 'MUHAMMAD ADI SAPUTRA', 'MUHAMMAD ANDRIAN HARY', 'Muhammad Bima Febrian', 'Muhammad Dimas Alfian', 'Muhammad Fandy Hilmani', 'MUHAMMAD IRFAN', 'MUHAMMAD NOVAL KARUNIA PUTRA', 'MUHAMMAD RAFLI WIRATAMA', 'MUHAMMAD RAVI KRISNA PUTRA', 'NOVAL DWI RIZKIANTO', 'Rendy Alfanzah', 'RIZQI BADAR RAMADAN', 'SAIDATUL BARIYAH', 'Sisca Dwi Iryanti', 'SOFIATUN NISAK', 'Umar Sa\'id'],
+            '8D': ['Ahmad Rafel Failani', 'AISHA SEPTI NABILA ZALFA', 'ALFAN FIKRI MAULANA', 'ANDINI DEWI PUTRI KUMALA', 'DEWI SAL SABILA', 'Dimas Maulana Akmal', 'FELLYANA OKTAVIA PUTRI', 'FENI NURI KUSDARYANTI', 'GENDIS AZALIA MALIKA BILQIS', 'INDRIANI MALIKATUL NAUMIAH', 'Khoirul Ulum Ismail', 'MAISYATUL MUNAWWAROH', 'Malikal Bulgis', 'MANISA ARDILA PUTRI', 'Moh. Lukmanul Hakim', 'Moh. Rizqi Novel', 'MOH. SALIM ALFARISI', 'Mohammad Fajar Rifki', 'MOHAMMAD FERDIANSYAH', 'MUHAMMAD AGUNG RENALDI PUTRA', 'MUHAMMAD BAYU ZAINSRIANSYAH', 'MUHAMMAD DHIMAS SAPUTRA', 'Muhammad Ely Sudarmaji', 'MUHAMMAD RIAN AFANDI', 'MUHAMMAD RIZKY RAFAEL', 'Muhibur Rohman', 'NEISYA APRILA QUINNOVA', 'NUR MUHAMMAD ANDIKA PRATAMA', 'RAHMAT FIQIH FAIR', 'SANDYANIS MAHADVI', 'Siti Jamilatul Haifah', 'Sony Josh', 'TEGAR ARI WIJAYA', 'WIYEH MAOFIROH UFI'],
+            '8E': ['Ahmad Dika Robitul Millah', 'Ahmad Faizal', 'DIANA MAYSOFA SALSABILA', 'FAEFIL HOSNAH', 'Fiyan Desta Fatwiyah Gandi', 'HASAN FAHMI', 'ILAHIYAH MUNAWWAROH', 'IRFAN RAHMATULLAH', 'KHOLIFIAN NAZRIL RISKY', 'M. Hasan Akbar Khoiri Aprilio', 'MAHAJUNA NARENDRA ALTAF BAHTIAR', 'MARETA HELMILIA PUTRI', 'MAULINDA FEBRIANTI', 'MOCH. ALDIANSYAH', 'MOH. ABD. QODIR ZAINI', 'Moh. Fadhol', 'Moh. Soliqin', 'MOH. SYA\'RONI ROMADONI', 'Moh. Ubaid Kholilur Rohman', 'Moh. Zainul Hasan', 'MOHAMMAD NAUFAL AFANDI', 'MOHAMMAD RIZKI LAKSMANA', 'Mohammad Usma Hamdany', 'MUCH. NURIS ANDRIANSYAH', 'MUHAMMAD AVAN EFENDI', 'Muhammad Firman', 'MUHAMMAD RIDHO', 'Muhammad Rizal Nur Wali', 'MUSDHALIFAH ANANDA FIRDAUSIAH', 'PUTRI DEVITA PUJI LESTARI', 'SAFIRA AYU ASYARI', 'SHIFA WARDANIYAH', 'SINTA NUR ROSALINDA', 'SYAUQIALAIKAR ROHMAN', 'Vivi Ramadhani', 'YULI WARDATUL HOLIDIA'],
+            '9A': ['Achmad Raditya Gusnita', 'Aditya Dwi Saputra', 'AHMAD FERDIANSYAH', 'ALFAREZA QIBNI IMAN', 'Andika Dwi Pratama', 'Arina Nazilatul Mahgfiroh', 'DEA ANGGUN LESTISYA DAFINA PUTRI', 'Dewi Umi Kulsum', 'Dhiah Putri Ayu Ramadhani', 'FAIQOTUL HUSNA', 'FIRDAUS PUTRA WILSA', 'INDI IKLITA NAFISAH', 'INTAN NUR AINI', 'Irma Nur Malasari', 'MEGA SOFWATUN NAKSABANDIYAH', 'MOH DANISWARA', 'Moh Fahril Qomarullah', 'Moh. Royhanul Zaqi', 'MOHAMMAD AHMADI', 'Mohammad Farhan Syaiful Islam', 'MUHAMMAD FAHRIL', 'MUHAMMAD UMAR HAMDAN', 'Nauval Ilhammuddin', 'NAUVALIA HANIK', 'Putri Damia Zara', 'Renita Nabila Putri', 'Rike Diah pitaloka', 'SHAFITRI', 'WILMA RIZKY NUR JANNAH', 'ZULFA FITRIA'],
+            '9B': ['AGUNG ADI PUTRA', 'AHMAD FAHRI BESTIAN P', 'Ahmad Kurniawan', 'Ahmad Nisar Putra', 'ATAYA KIRANA ISMIAIDA', 'Duwi Aisa Azzahroh', 'DWI AKHDAN FAWWAS MU\'AFI', 'FARIDHATUL JANNAH', 'Feny Fatimatul Munawwaroh', 'GILANG ADITYA PRATAMA', 'HANUNAH MALIKA BALQIS', 'INDAH DWI PUTRI', 'LADY FILIA MARGARETA', 'M. Alif Firmansyah', 'Maksum Afnani', 'MEISA NURIL FAJAROTUL FIRDAUSIYAH', 'MOH RIZQI HIRZUL FAHMI', 'Moh. Bhagas', 'Moh. Feri Ardiansyah', 'Mohammad Izam', 'Mohammad Rifqi Lutfi Nur kholis', 'MUHAMMAD RIFKY NAZAL ARASYAH', 'Nadiratus Sholeha', 'Nailatul Najah', 'Nur Hafiah Romadhani', 'PUTRI ELVINA VIORENZA', 'ROHMI FUADAH', 'Sely Dwi Angraeni', 'SITI MU\'RIFA', 'ZAHROTUS SYITA'],
+            '9C': ['Aditya Bagaskara', 'AHMAD NIZAR', 'Ahmad Nur Hapidi', 'AHMAD SHODIQ', 'APRILIA DWI SUHENDRO', 'Ashifatul Jannah', 'Deby Hanggara', 'EDO MAHER ZEIN DWI PRAKASA', 'Gita Novelia', 'HILALATUL FITRIA', 'ICA PUTRI', 'INTAN RAMADANI', 'Irma Dwi Melani', 'JULIETA SALSABIELLA  AGATHA', 'Lailatul Qomariyah', 'LINTANG OKTAVIANI WULANDARI', 'Moh. Diky Pratama', 'MOH. FEBRI ARDIANSYAH', 'Moh. Kareza Fachri', 'Muhammad Abdurrosit', 'MUHAMMAD ALAIK HIDAYATULLAH', 'Muhammad Rizqullah Az Zahib', 'Muhammad Yasin', 'NAILA DIANA', 'Nanda Arissa Putri', 'NUR AZIZEH', 'TAUFIQUR ROHMAN', 'Zulfiah Putri Nur Aini'],
+            '9D': ['Ahmad Fiqi Hariyanto', 'AHMAD RAMADHANI SAPUTRA', 'AIDIL FITRIANA PUTRI', 'APRILIA EKA PUTRI AYU NENGTIAS', 'CEZYA ANGGRAENI RULFY PUTRI', 'Farhan Habiban Maulana', 'Faridatul Nurhikmah', 'FHADHILATUS SHOLIHIN', 'Haris Maulana Ardani', 'HOMSATUN HASANAH', 'INTAN AYUDYAH LESTARI', 'IQBAH MAULANA ABDULLAH', 'KURNIA AFANDI ADRIYANSAH', 'LAILATUL HUSNA', 'MAHFUDZUL HUDA', 'Moch. Rifqi Maulana', 'MOH REZA ADI PUTRA', 'MOH. RICKY MAULANA', 'Mohammad Noval Saputra', 'MOHAMMAD SALEH RAHMAT RIANDI', 'Muhammad Irfan', 'NAFILA ELOK NUR RAMADHANI', 'NAILA NUR FERBRIANTI', 'Najwa Januar Foryan', 'NUR HIDAYATUL ILMI MAULINDA', 'Nurul Eka Febriana', 'Panji Satria Yudha', 'Reza Ardiansyah', 'Rifah Afnani', 'WULAN SUCI ROMADHANI', 'Yuliya Putri', 'ZULFANI ADITIYA DIRGANTARA'],
+            '9E': ['ABDUL BASIR KUDDUS', 'Abdul Rahman', 'Alfin Ali Mustaufik', 'Aysa Firda Aprilia', 'Bunga Permata Putri', 'Cinta Dewi Rahayu', 'Elsa Julia Rahmawati', 'FIKA MUKHLISHOTUL MAULIDAH', 'FITA INDRIANI', 'Hilmi Auliatur Rohman', 'Jesica Aulia Putri', 'LANA LUBNAFAIQOTUZ ZAHIYAH', 'M. DANIL HIDAYATULLAH', 'MAR\'ATUL KAMILAH SALSABILA PUTRI', 'Meyda Safira Nurilia', 'Moh. Fadil', 'Moh. Falah Saputra', 'MOH. FIRMANSAH', 'Moh. Radit Taqwa', 'Moh. Zidan Choiri', 'Mohammad Zaini', 'MUH. CHANDRA SUHARDIANSAH PUTRA', 'Muhammad Arif', 'MUHAMMAD FAHIMUL HIKAM', 'Nur Havida Rohmah', 'SITI SUKAISIH', 'YULIA FENI HERLIANA FAJRIN', 'Zahrotul Wardania Putri', 'ZAIDAN AGHATA', 'ZAINUL HASAN', 'Zaura Risqina'],
+            '9F': ['ABDULLAH FARIS FURQAN ZULQA\'DAH', 'Anni Shofiyatus Zulfa', 'AULIA PUTRA MAULANA', 'CHANDRA DWI ANDIKA', 'DESI IRA WATI', 'DINDA NUR HASANAH', 'EJAZ ROMADHONI', 'ELIANA DWI AGUSTIN', 'FARIDA HANUM DWI RAMADHANI', 'HILMIYA AL ABBIYAH', 'Hindun Afiyah Muhlis', 'ICHA HIDAYATUL HUSNA', 'MALIKA SYAFARIANA', 'MAULANA DWI WIJAYA', 'Maulidah Safiratul Komariyah', 'MOH SAYYIREZA ADIT YA', 'Moh. Dava Ibnu Adam', 'MOH. KAFA BIHI', 'MOH. RISQI RAMADHANI', 'Muhammad Efan', 'Muhammad Fadhil Hermawan', 'Muhammad Zaki Aliamani Pratama', 'NADA FITRIYA', 'Rehan', 'RENDY SETIAWAN', 'SALSA BILA FATAYATUS ZAKIYAH SUTRISNO', 'Salsabila Aurora Adenia', 'Siti Maymuna', 'SYAFIQO NAYLA PUTRI', 'YULIANA HARIYANTI']
+        };
+
+        // Default passwords
+        const passwords = {
+            'Administrator': '1111',
+            'IFDLALI, S.Si., M.Pd.': '001',
+            'Drs. MASTO': '002',
+            'SRI PUJI ASTUTI, M.Pd.': '003',
+            'Dra. KANTI SRI LESTARI': '004',
+            'FITRI YANUR, M. Pd': '005',
+            'Dra. APRI SURYANI': '006',
+            'FIRNALITA INDRAYANI, S.Pd.': '007',
+            'TATIK WIJAYANTI, S.Pd.': '008',
+            'GATOT SANTOSO, S.Pd.': '009',
+            'ENI SUFITRI S. S.Pd.': '010',
+            'WIWIK WIDYAWATI, S.Pd.': '011',
+            'MUH. TAUFIQUL ANWAR, S.Pd.': '012',
+            'GINA UTARI ELGANI, S.Pd.': '013',
+            'YUSMAN HADI KURNIAWAN, S.Pd.': '014',
+            'MARFU\'A, S.Pd.': '015',
+            'SAIFUL BAHRI, S.Pd.': '016',
+            'SAHUR, S.Ag.': '017',
+            'AINUL INAYAH, S.Ag.': '018',
+            'HERU NOOR WAKHID, S. Pd': '019',
+            'LINDARI HERLININGSIH, S. Pd.I': '020',
+            'M. HEPNI, S. Pd.I': '021',
+            'TANTI KRISDIANA, S. Pd': '022',
+            'ENI KUSTANTINI, S. Pd': '023',
+            'WAHYUNING RAHAYU, S. Pd': '024',
+            'ELSA KURNIA DWI SEPTIANA, S. Pd': '025',
+            'RIVA INDRIYANA, S. Pd': '026',
+            'SLAMET HIDAYAT, S.E': '027',
+            'ANDI WIJAYAKUSUMA, S.Kom': '028',
+            'HALIMATUS SA\'DIYAH, S. Pd': '029',
+            'IRWAN NUGROHO, S. Pd': '030'
+        };
+
+        // Signature canvas variables
+        let canvas, ctx;
+        let isDrawing = false;
+        let classPhotoData = null;
+        let signatureEmpty = true; // track whether user has drawn on the canvas
+
+        // Initialize signature canvas using Pointer Events with DPR scaling
+        function initSignatureCanvas() {
+            canvas = document.getElementById('signatureCanvas');
+            ctx = canvas.getContext('2d');
+
+            // initial size and scale
+            adjustCanvasSize();
+
+            // Drawing style (will apply on each resize through adjustCanvasSize)
+            ctx.strokeStyle = '#000';
+            ctx.lineWidth = 2;
+            ctx.lineCap = 'round';
+
+            // Pointer events (handle mouse, touch, pen uniformly)
+            canvas.addEventListener('pointerdown', onPointerDown);
+            canvas.addEventListener('pointermove', onPointerMove);
+            canvas.addEventListener('pointerup', onPointerUp);
+            canvas.addEventListener('pointercancel', onPointerUp);
+            canvas.addEventListener('pointerout', onPointerUp);
+            canvas.addEventListener('pointerleave', onPointerUp);
+
+            // Recalculate canvas size on window resize (debounced)
+            window.addEventListener('resize', debounce(adjustCanvasSize, 150));
+        }
+
+        function onPointerDown(e) {
+            if (!ctx) return;
+            isDrawing = true;
+            signatureEmpty = false;
+            // ensure we draw relative to the canvas element
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            ctx.beginPath();
+            ctx.moveTo(x, y);
+            // capture pointer to continue receiving events outside element
+            try { e.target.setPointerCapture(e.pointerId); } catch (err) {}
+        }
+
+        function onPointerMove(e) {
+            if (!isDrawing || !ctx) return;
+            const rect = canvas.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            ctx.lineTo(x, y);
+            ctx.stroke();
+        }
+
+        function onPointerUp(e) {
+            if (!ctx) return;
+            isDrawing = false;
+            try { e.target.releasePointerCapture(e.pointerId); } catch (err) {}
+        }
+
+        function clearSignature() {
+            if (!ctx || !canvas) return;
+            const dpr = window.devicePixelRatio || 1;
+            // clear the entire pixel buffer by temporarily resetting transform
+            ctx.save();
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.restore();
+            // restore logical scale for future drawing
+            signatureEmpty = true;
+        }
+
+        // Debounce utility
+        function debounce(fn, wait) {
+            let t = null;
+            return function(...args) {
+                clearTimeout(t);
+                t = setTimeout(() => fn.apply(this, args), wait);
+            };
+        }
+
+        // Adjust canvas size while preserving current drawing
+        function adjustCanvasSize() {
+            if (!canvas || !ctx) return;
+
+            // export current drawing as image
+            let dataUrl = null;
+            try {
+                // Only export if not empty
+                if (!signatureEmpty) dataUrl = canvas.toDataURL();
+            } catch (err) {
+                console.warn('Could not export canvas image before resize:', err);
+                dataUrl = null;
+            }
+
+            // measure CSS size and DPR
+            const rect = canvas.getBoundingClientRect();
+            const dpr = window.devicePixelRatio || 1;
+
+            // set size in device pixels
+            const newWidth = Math.round(rect.width * dpr);
+            const newHeight = Math.round(rect.height * dpr);
+
+            // create temporary canvas to restore drawing after resize
+            const tmp = document.createElement('canvas');
+            tmp.width = canvas.width;
+            tmp.height = canvas.height;
+            const tmpCtx = tmp.getContext('2d');
+            // copy current pixels
+            try { tmpCtx.drawImage(canvas, 0, 0); } catch (err) {}
+
+            // resize main canvas
+            canvas.width = newWidth;
+            canvas.height = newHeight;
+            canvas.style.width = rect.width + 'px';
+            canvas.style.height = rect.height + 'px';
+
+            // reset scale so that drawing coordinates are in CSS pixels
+            ctx = canvas.getContext('2d');
+            ctx.setTransform(1, 0, 0, 1, 0, 0);
+            ctx.scale(dpr, dpr);
+
+            // restore drawing from tmp if possible
+            try {
+                if (dataUrl) {
+                    const img = new Image();
+                    img.onload = function() {
+                        // draw scaled to CSS size
+                        ctx.drawImage(img, 0, 0, rect.width, rect.height);
+                    };
+                    img.src = dataUrl;
+                } else {
+                    // fallback: draw pixels from tmp (may be skewed if DPR changed)
+                    ctx.drawImage(tmp, 0, 0, rect.width, rect.height);
+                }
+            } catch (err) {
+                console.warn('Could not restore canvas after resize:', err);
+            }
+
+            // reapply drawing styles
+            ctx.strokeStyle = '#000';
+            ctx.lineWidth = 2;
+            ctx.lineCap = 'round';
+        }
+
+        // Photo upload functions
+        function handlePhotoUpload(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    classPhotoData = e.target.result;
+                    document.getElementById('previewImage').src = e.target.result;
+                    document.getElementById('photoPreview').classList.remove('hidden');
+                    document.getElementById('photoUploadArea').classList.add('hidden');
+                };
+                reader.readAsDataURL(file);
+            }
+        }
+
+        function removePhoto() {
+            classPhotoData = null;
+            document.getElementById('classPhoto').value = '';
+            document.getElementById('photoPreview').classList.add('hidden');
+            document.getElementById('photoUploadArea').classList.remove('hidden');
+        }
+
+        // Auto sync to Google Spreadsheet
+        async function syncToSpreadsheetAuto(formData) {
+            // Enqueue processing: the actual send is handled by processSyncQueue()
+            // This function triggers an immediate attempt to send any unsynced entries.
+            try {
+                // Quick UI update: show there are pending items to sync
+                const pending = journalData.filter(e => !e.synced).length;
+                if (pending > 0) updateSyncStatus('queued', pending);
+            } catch (err) {
+                console.warn('syncToSpreadsheetAuto: could not update queued count', err);
+            }
+
+            // Trigger background processing (non-blocking)
+            processSyncQueue();
+        }
+
+        // Manual sync all data
+        async function manualSync() {
+            try {
+                updateSyncStatus('syncing');
+                
+
+                // For manual sync, decide between batch or individual
+                const unsynced = journalData.filter(e => !e.synced);
+                if (unsynced.length === 0) {
+                    showSuccessModal('Tidak ada entri yang perlu disinkronkan.');
+                    updateSyncStatus('success');
+                    return;
+                }
+
+                const BATCH_THRESHOLD = 10;
+                let success = false;
+                if (unsynced.length >= BATCH_THRESHOLD) {
+                    success = await sendBatchToScript(unsynced);
+                } else {
+                    for (const entry of unsynced) {
+                        await sendEntryToScript(entry);
+                    }
+                    success = !journalData.some(e => !e.synced);
+                }
+
+                if (success) {
+                    showSuccessModal('Semua data berhasil disinkronkan ke 3 sheet Google Spreadsheet!');
+                } else {
+                    alert('Beberapa entri gagal disinkronkan. Mereka akan dicoba kembali otomatis.');
+                }
+
+                // Refresh admin dashboard if visible
+                if (!document.getElementById('adminDashboard').classList.contains('hidden')) {
+                    loadJournalData();
+                    updateDashboardStats();
+                }
+            } catch (error) {
+                console.error('Manual sync error:', error);
+                updateSyncStatus('error');
+                alert('Gagal sinkronisasi ke Google Spreadsheet. Silakan coba lagi.');
+            }
+        }
+
+        // Send a single entry to the Apps Script endpoint and mark it synced on success
+        async function sendEntryToScript(entry) {
+            try {
+                updateSyncStatus('syncing');
+                const payload = {
+                    action: 'addJournal',
+                    data: entry,
+                    sheets: {
+                        dataJurnal: 'Data Jurnal',
+                        rekapGuru: 'Rekap Guru',
+                        rekapSiswa: 'Rekap Siswa'
+                    }
+                };
+
+                const resp = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify(payload)
+                });
+
+                const result = await resp.json();
+                if (result && result.success) {
+                    entry.synced = true;
+                    localStorage.setItem('journalData', JSON.stringify(journalData));
+                    updateSyncStatus('success');
+                    return true;
+                } else {
+                    entry.synced = entry.synced || false;
+                    updateSyncStatus('error');
+                    return false;
+                }
+            } catch (err) {
+                console.error('sendEntryToScript error:', err);
+                updateSyncStatus('error');
+                return false;
+            }
+        }
+
+        // Process sync queue: try to send unsynced entries one by one with brief delays
+        let processingQueue = false;
+        async function processSyncQueue() {
+            if (processingQueue) return;
+            processingQueue = true;
+
+            try {
+                const unsynced = journalData.filter(e => !e.synced);
+                if (unsynced.length === 0) return;
+
+                // If many unsynced entries, send in a single batch to reduce requests
+                const BATCH_THRESHOLD = 5;
+                if (unsynced.length >= BATCH_THRESHOLD) {
+                    if (navigator.onLine) {
+                        await sendBatchToScript(unsynced);
+                    }
+                } else {
+                    for (const entry of unsynced) {
+                        if (!navigator.onLine) break;
+                        await sendEntryToScript(entry);
+                        await new Promise(res => setTimeout(res, 250));
+                    }
+                }
+            } finally {
+                processingQueue = false;
+                // update UI counts
+                updateDashboardStats();
+            }
+        }
+
+        // Online/offline handlers
+        window.addEventListener('online', () => {
+            console.log('Back online — processing sync queue');
+            processSyncQueue();
+        });
+
+        window.addEventListener('offline', () => {
+            console.log('Offline — will queue submissions locally');
+            updateSyncStatus('error');
+        });
+
+        // Periodic background sync attempt (every 2 minutes)
+        setInterval(() => {
+            if (navigator.onLine) processSyncQueue();
+        }, 2 * 60 * 1000);
+
+        // Update sync status indicator
+        function updateSyncStatus(status) {
+            const syncStatus = document.getElementById('syncStatus');
+            
+            switch(status) {
+                case 'success':
+                    syncStatus.className = 'text-sm px-3 py-1 rounded-full bg-green-100 text-green-800';
+                    syncStatus.textContent = '✓ Tersinkron';
+                    break;
+                case 'error':
+                    syncStatus.className = 'text-sm px-3 py-1 rounded-full bg-red-100 text-red-800';
+                    syncStatus.textContent = '✗ Gagal Sinkron';
+                    break;
+                case 'syncing':
+                    syncStatus.className = 'text-sm px-3 py-1 rounded-full bg-yellow-100 text-yellow-800';
+                    syncStatus.textContent = '⟳ Menyinkron...';
+                    break;
+                case 'queued':
+                    // allow passing a number via second param by calling updateSyncStatus('queued', n)
+                    const pending = arguments[1] || journalData.filter(e => !e.synced).length || 0;
+                    syncStatus.className = 'text-sm px-3 py-1 rounded-full bg-yellow-100 text-yellow-800';
+                    syncStatus.textContent = `⎋ ${pending} Menunggu Sinkron`;
+                    break;
+            }
+        }
+
+        // Open Google Spreadsheet
+        function openSpreadsheet(sheetName = null) {
+            let spreadsheetUrl = `https://docs.google.com/spreadsheets/d/${SPREADSHEET_ID}/edit?usp=sharing`;
+            
+            // Add specific sheet navigation if sheet name provided
+            if (sheetName) {
+                const sheetId = getSheetId(sheetName);
+                if (sheetId) {
+                    spreadsheetUrl += `#gid=${sheetId}`;
+                }
+            }
+            
+            window.open(spreadsheetUrl, '_blank', 'noopener,noreferrer');
+        }
+        
+        // Get sheet ID for navigation (these would need to be updated with actual sheet IDs)
+        function getSheetId(sheetName) {
+            const sheetIds = {
+                'Data Jurnal': '0',      // Default first sheet
+                'Rekap Guru': '1',       // Second sheet
+                'Rekap Siswa': '2'       // Third sheet
+            };
+            return sheetIds[sheetName] || '0';
+        }
+
+        // Load student attendance when class is selected
+        function loadStudentAttendance() {
+            const selectedClass = document.getElementById('class').value;
+            const attendanceSection = document.getElementById('attendanceSection');
+            const studentList = document.getElementById('studentList');
+            
+            if (selectedClass && studentData[selectedClass]) {
+                attendanceSection.classList.remove('hidden');
+                studentList.innerHTML = '';
+                
+                studentData[selectedClass].forEach((student, index) => {
+                    const studentDiv = document.createElement('div');
+                    studentDiv.className = 'bg-white p-3 rounded border';
+                    studentDiv.innerHTML = `
+                        <div class="flex items-center justify-between">
+                            <span class="font-medium text-gray-800">${index + 1}. ${student}</span>
+                            <div class="flex space-x-4">
+                                <label class="flex items-center space-x-1 cursor-pointer">
+                                    <input type="radio" name="attendance_${index}" value="Hadir" class="text-green-600" checked>
+                                    <span class="text-sm text-green-600">Hadir</span>
+                                </label>
+                                <label class="flex items-center space-x-1 cursor-pointer">
+                                    <input type="radio" name="attendance_${index}" value="Ijin" class="text-yellow-600">
+                                    <span class="text-sm text-yellow-600">Ijin</span>
+                                </label>
+                                <label class="flex items-center space-x-1 cursor-pointer">
+                                    <input type="radio" name="attendance_${index}" value="Sakit" class="text-blue-600">
+                                    <span class="text-sm text-blue-600">Sakit</span>
+                                </label>
+                                <label class="flex items-center space-x-1 cursor-pointer">
+                                    <input type="radio" name="attendance_${index}" value="Alpha" class="text-red-600">
+                                    <span class="text-sm text-red-600">Alpha</span>
+                                </label>
+                            </div>
+                        </div>
+                    `;
+                    studentList.appendChild(studentDiv);
+                });
+                
+
+            } else {
+                attendanceSection.classList.add('hidden');
+            }
+        }
+
+        // Update current date and time
+        function updateDateTime() {
+            const now = new Date();
+            const options = {
+                weekday: 'long',
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric',
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                timeZone: 'Asia/Jakarta'
+            };
+            document.getElementById('currentDateTime').textContent = 
+                now.toLocaleDateString('id-ID', options) + ' WIB';
+        }
+
+        // Login functionality
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const userName = document.getElementById('userName').value;
+            const password = document.getElementById('password').value;
+            
+            if (passwords[userName] && passwords[userName] === password) {
+                currentUser = userName;
+                document.getElementById('loginSection').classList.add('hidden');
+                
+                if (userName === 'Administrator') {
+                    document.getElementById('adminDashboard').classList.remove('hidden');
+                    loadJournalData();
+                    updateDashboardStats();
+                    // Auto-send teacher & student lists when admin logs in
+                    setTimeout(() => {
+                        try { sendTeacherListToScript(); } catch(e) {}
+                        try { sendStudentDataToScript(); } catch(e) {}
+                    }, 300);
+                } else {
+                    document.getElementById('teacherDashboard').classList.remove('hidden');
+                    document.getElementById('teacherName').value = userName;
+                    updateDateTime();
+                    setInterval(updateDateTime, 1000);
+                    
+                    // Initialize signature canvas
+                    setTimeout(initSignatureCanvas, 100);
+                }
+            } else {
+                alert('Username atau password salah!');
+            }
+        });
+
+        // Journal form submission
+        document.getElementById('journalForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get selected periods
+            const selectedPeriods = [];
+            const periodCheckboxes = document.querySelectorAll('input[name="periods"]:checked');
+            periodCheckboxes.forEach(checkbox => {
+                selectedPeriods.push(checkbox.value);
+            });
+            
+            if (selectedPeriods.length === 0) {
+                alert('Pilih minimal satu jam pelajaran!');
+                return;
+            }
+            
+            // Get attendance data
+            const selectedClass = document.getElementById('class').value;
+            const attendanceData = {};
+            if (selectedClass && studentData[selectedClass]) {
+                studentData[selectedClass].forEach((student, index) => {
+                    const attendanceRadio = document.querySelector(`input[name="attendance_${index}"]:checked`);
+                    attendanceData[student] = attendanceRadio ? attendanceRadio.value : 'Hadir';
+                });
+            }
+            
+            // Get signature data (use tracked flag to avoid expensive/getImageData issues)
+            let signatureData = null;
+            const isSignatureEmpty = (typeof signatureEmpty !== 'undefined') ? signatureEmpty : true;
+            if (!isSignatureEmpty && canvas) {
+                try {
+                    signatureData = canvas.toDataURL();
+                } catch (err) {
+                    // If toDataURL fails for any reason, fall back to null but keep saving other data
+                    console.warn('Failed to serialize signature:', err);
+                    signatureData = null;
+                }
+            }
+            
+            const formData = {
+                id: Date.now(),
+                timestamp: new Date().toISOString(),
+                date: new Date().toLocaleDateString('id-ID'),
+                time: new Date().toLocaleTimeString('id-ID'),
+                teacher: document.getElementById('teacherName').value,
+                subject: document.getElementById('subject').value,
+                class: document.getElementById('class').value,
+                periods: selectedPeriods,
+
+                material: document.getElementById('material').value,
+                activities: document.getElementById('activities').value,
+                notes: document.getElementById('notes').value,
+                attendance: attendanceData,
+                classPhoto: classPhotoData,
+                signature: isSignatureEmpty ? null : signatureData,
+                synced: false // new entries are unsynced until confirmed
+            };
+            
+            journalData.push(formData);
+            localStorage.setItem('journalData', JSON.stringify(journalData));
+            
+            // Auto sync to Google Spreadsheet
+            // Trigger queue processing (will attempt to send immediately if online)
+            syncToSpreadsheetAuto(formData);
+            processSyncQueue();
+            
+            // Reset form
+            document.getElementById('journalForm').reset();
+            document.getElementById('teacherName').value = currentUser;
+            document.getElementById('attendanceSection').classList.add('hidden');
+            
+            // Reset photo and signature
+            removePhoto();
+            clearSignature();
+            
+            showSuccessModal('Jurnal berhasil disimpan dan disinkronkan!');
+        });
+
+        // Update dashboard statistics
+        function updateDashboardStats() {
+            const today = new Date().toLocaleDateString('id-ID');
+            const todayData = journalData.filter(entry => entry.date === today);
+            
+            // Total journals today
+            document.getElementById('totalJournals').textContent = todayData.length;
+            
+            // Active teachers today
+            const activeTeachers = new Set(todayData.map(entry => entry.teacher));
+            document.getElementById('activeTeachers').textContent = activeTeachers.size;
+            
+            // Average attendance
+            let totalStudents = 0;
+            let totalPresent = 0;
+            
+            todayData.forEach(entry => {
+                if (entry.attendance) {
+                    Object.values(entry.attendance).forEach(status => {
+                        totalStudents++;
+                        if (status === 'Hadir') totalPresent++;
+                    });
+                }
+            });
+            
+            const averageAttendance = totalStudents > 0 ? Math.round((totalPresent / totalStudents) * 100) : 0;
+            document.getElementById('averageAttendance').textContent = averageAttendance + '%';
+            
+            // Synced journals count
+            const syncedCount = todayData.filter(entry => entry.synced).length;
+            document.getElementById('syncedJournals').textContent = syncedCount;
+        }
+
+        // Send teacher list to Apps Script (uses uploadTeacherList action)
+        async function sendTeacherListToScript() {
+            try {
+                const teacherKeys = Object.keys(passwords);
+                const payload = { action: 'uploadTeacherList', teacherList: teacherKeys };
+                const form = new URLSearchParams();
+                form.append('payload', JSON.stringify(payload));
+
+                updateSyncStatus('syncing');
+                const resp = await fetch(SCRIPT_URL, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: form.toString() });
+                const json = await resp.json();
+                if (json && json.success) {
+                    showSuccessModal('Daftar guru berhasil dikirim ke sheet Rekap Guru. (' + (json.imported || 0) + ' guru)');
+                    updateSyncStatus('success');
+                } else {
+                    showSuccessModal('Gagal mengirim daftar guru: ' + JSON.stringify(json));
+                    updateSyncStatus('error');
+                }
+            } catch (err) {
+                console.error('sendTeacherListToScript error:', err);
+                showSuccessModal('Gagal mengirim daftar guru: ' + err.message);
+                updateSyncStatus('error');
+            }
+        }
+
+        // Send full studentData object to Apps Script (uses uploadStudentData action)
+        async function sendStudentDataToScript() {
+            try {
+                const payload = { action: 'uploadStudentData', studentData: studentData };
+                const form = new URLSearchParams();
+                form.append('payload', JSON.stringify(payload));
+
+                updateSyncStatus('syncing');
+                const resp = await fetch(SCRIPT_URL, { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: form.toString() });
+                const json = await resp.json();
+                if (json && json.success) {
+                    showSuccessModal('Data siswa berhasil dikirim ke sheet Rekap Siswa. (' + (json.imported || 0) + ' entri)');
+                    updateSyncStatus('success');
+                } else {
+                    showSuccessModal('Gagal mengirim data siswa: ' + JSON.stringify(json));
+                    updateSyncStatus('error');
+                }
+            } catch (err) {
+                console.error('sendStudentDataToScript error:', err);
+                showSuccessModal('Gagal mengirim data siswa: ' + err.message);
+                updateSyncStatus('error');
+            }
+        }
+
+        // Load journal data for admin
+        function loadJournalData() {
+            const tbody = document.getElementById('journalTableBody');
+            const today = new Date().toLocaleDateString('id-ID');
+            const todayData = journalData.filter(entry => entry.date === today);
+            
+            tbody.innerHTML = '';
+            
+            if (todayData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="px-4 py-8 text-center text-gray-500">Belum ada data jurnal hari ini</td></tr>';
+                return;
+            }
+            
+            todayData.forEach((entry, index) => {
+                const row = document.createElement('tr');
+                const periods = Array.isArray(entry.periods) ? entry.periods.join(', ') : (entry.period || '-');
+                
+                // Determine status based on sync
+                const status = entry.synced ? 'Tersinkron' : 'Belum Sinkron';
+                const statusClass = entry.synced ? 'text-green-600' : 'text-yellow-600';
+                
+                row.innerHTML = `
+                    <td class="px-4 py-2 text-sm text-gray-900">${index + 1}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900">${entry.teacher}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900">${entry.date}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900">${entry.class}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900">${periods}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900">${entry.material.substring(0, 30)}${entry.material.length > 30 ? '...' : ''}</td>
+                    <td class="px-4 py-2 text-sm ${statusClass}">${status}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900">
+                        <button onclick="viewJournalDetail(${entry.id})" class="text-blue-600 hover:text-blue-800 text-xs">
+                            Detail
+                        </button>
+                    </td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        // Show success modal
+        function showSuccessModal(message) {
+            document.getElementById('successMessage').textContent = message;
+            document.getElementById('successModal').classList.remove('hidden');
+            document.getElementById('successModal').classList.add('flex');
+        }
+
+        // Close modal
+        function closeModal() {
+            document.getElementById('successModal').classList.add('hidden');
+            document.getElementById('successModal').classList.remove('flex');
+        }
+
+        // Logout functionality
+        function logout() {
+            currentUser = null;
+            document.getElementById('loginSection').classList.remove('hidden');
+            document.getElementById('teacherDashboard').classList.add('hidden');
+            document.getElementById('adminDashboard').classList.add('hidden');
+            
+            // Reset forms
+            document.getElementById('loginForm').reset();
+            document.getElementById('journalForm').reset();
+        }
+
+        // View journal detail
+        function viewJournalDetail(journalId) {
+            const journal = journalData.find(entry => entry.id === journalId);
+            if (!journal) return;
+            
+            let attendanceText = '';
+            if (journal.attendance) {
+                const attendanceStats = {};
+                Object.values(journal.attendance).forEach(status => {
+                    attendanceStats[status] = (attendanceStats[status] || 0) + 1;
+                });
+                attendanceText = Object.entries(attendanceStats)
+                    .map(([status, count]) => `${status}: ${count}`)
+                    .join(', ');
+            }
+            
+            const periods = Array.isArray(journal.periods) ? journal.periods.join(', ') : (journal.period || '-');
+            
+            const detailText = `
+DETAIL JURNAL MENGAJAR
+
+Guru: ${journal.teacher}
+Tanggal: ${journal.date}
+Waktu: ${journal.time}
+Mata Pelajaran: ${journal.subject}
+Kelas: ${journal.class}
+Jam Pelajaran: ${periods}
+
+MATERI PEMBELAJARAN:
+${journal.material}
+
+KEGIATAN PEMBELAJARAN:
+${journal.activities}
+
+ABSENSI SISWA:
+${attendanceText || 'Tidak ada data absensi'}
+
+CATATAN:
+${journal.notes || 'Tidak ada catatan'}
+
+Status Sinkronisasi: ${journal.synced ? 'Tersinkron' : 'Belum Sinkron'}
+            `;
+            
+            alert(detailText);
+        }
+
+        // Student Recap Functions
+        function showStudentRecap() {
+            document.getElementById('studentRecapModal').classList.remove('hidden');
+            document.getElementById('studentRecapModal').classList.add('flex');
+            
+            // Set default date to today
+            const today = new Date().toISOString().split('T')[0];
+            document.getElementById('recapDateFilter').value = today;
+            
+            loadStudentRecapData();
+        }
+
+        function closeStudentRecap() {
+            document.getElementById('studentRecapModal').classList.add('hidden');
+            document.getElementById('studentRecapModal').classList.remove('flex');
+        }
+
+        function loadStudentRecapData() {
+            const classFilter = document.getElementById('recapClassFilter').value;
+            const dateFilter = document.getElementById('recapDateFilter').value;
+            
+            // Filter journal data based on current teacher and filters
+            let filteredData = journalData.filter(entry => {
+                if (entry.teacher !== currentUser) return false;
+                if (classFilter && entry.class !== classFilter) return false;
+                if (dateFilter) {
+                    const entryDate = new Date(entry.timestamp).toISOString().split('T')[0];
+                    if (entryDate !== dateFilter) return false;
+                }
+                return true;
+            });
+
+            // Prepare student attendance data
+            const studentAttendanceData = [];
+            let totalStats = { Hadir: 0, Ijin: 0, Sakit: 0, Alpha: 0 };
+
+            filteredData.forEach(entry => {
+                if (entry.attendance) {
+                    Object.entries(entry.attendance).forEach(([studentName, status]) => {
+                        studentAttendanceData.push({
+                            studentName: studentName,
+                            class: entry.class,
+                            date: entry.date,
+                            subject: entry.subject,
+                            status: status,
+                            periods: Array.isArray(entry.periods) ? entry.periods.join(', ') : (entry.period || '-')
+                        });
+                        
+                        totalStats[status] = (totalStats[status] || 0) + 1;
+                    });
+                }
+            });
+
+            // Update summary cards
+            document.getElementById('totalHadir').textContent = totalStats.Hadir;
+            document.getElementById('totalIjin').textContent = totalStats.Ijin;
+            document.getElementById('totalSakit').textContent = totalStats.Sakit;
+            document.getElementById('totalAlpha').textContent = totalStats.Alpha;
+
+            // Load table data
+            const tbody = document.getElementById('studentRecapTableBody');
+            tbody.innerHTML = '';
+
+            if (studentAttendanceData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="px-4 py-8 text-center text-gray-500">Tidak ada data kehadiran siswa</td></tr>';
+                return;
+            }
+
+            studentAttendanceData.forEach((data, index) => {
+                const row = document.createElement('tr');
+                const statusClass = getStatusClass(data.status);
+                
+                row.innerHTML = `
+                    <td class="px-4 py-2 text-sm text-gray-900 border-b">${index + 1}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900 border-b font-medium">${data.studentName}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900 border-b">${data.class}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900 border-b">${data.date}</td>
+                    <td class="px-4 py-2 text-sm text-gray-900 border-b">${data.subject}</td>
+                    <td class="px-4 py-2 text-sm border-b">
+                        <span class="px-2 py-1 rounded-full text-xs font-medium ${statusClass}">
+                            ${data.status}
+                        </span>
+                    </td>
+                    <td class="px-4 py-2 text-sm text-gray-900 border-b">${data.periods}</td>
+                `;
+                tbody.appendChild(row);
+            });
+        }
+
+        function getStatusClass(status) {
+            switch(status) {
+                case 'Hadir': return 'bg-green-100 text-green-800';
+                case 'Ijin': return 'bg-yellow-100 text-yellow-800';
+                case 'Sakit': return 'bg-blue-100 text-blue-800';
+                case 'Alpha': return 'bg-red-100 text-red-800';
+                default: return 'bg-gray-100 text-gray-800';
+            }
+        }
+
+        function filterStudentRecap() {
+            loadStudentRecapData();
+        }
+
+        function resetRecapFilter() {
+            document.getElementById('recapClassFilter').value = '';
+            document.getElementById('recapDateFilter').value = '';
+            loadStudentRecapData();
+        }
+
+        function exportStudentRecap() {
+            const classFilter = document.getElementById('recapClassFilter').value;
+            const dateFilter = document.getElementById('recapDateFilter').value;
+            
+            // Filter data for export
+            let filteredData = journalData.filter(entry => {
+                if (entry.teacher !== currentUser) return false;
+                if (classFilter && entry.class !== classFilter) return false;
+                if (dateFilter) {
+                    const entryDate = new Date(entry.timestamp).toISOString().split('T')[0];
+                    if (entryDate !== dateFilter) return false;
+                }
+                return true;
+            });
+
+            // Prepare CSV data
+            const csvData = [];
+            csvData.push(['No', 'Nama Siswa', 'Kelas', 'Tanggal', 'Mata Pelajaran', 'Status', 'Jam Pelajaran']);
+
+            let rowNumber = 1;
+            filteredData.forEach(entry => {
+                if (entry.attendance) {
+                    Object.entries(entry.attendance).forEach(([studentName, status]) => {
+                        const periods = Array.isArray(entry.periods) ? entry.periods.join(', ') : (entry.period || '-');
+                        csvData.push([
+                            rowNumber++,
+                            studentName,
+                            entry.class,
+                            entry.date,
+                            entry.subject,
+                            status,
+                            periods
+                        ]);
+                    });
+                }
+            });
+
+            // Create and download CSV
+            const csvContent = csvData.map(row => row.join(',')).join('\n');
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            
+            if (link.download !== undefined) {
+                const url = URL.createObjectURL(blob);
+                link.setAttribute('href', url);
+                
+                const fileName = `Rekap_Kehadiran_Siswa_${currentUser.replace(/[^a-zA-Z0-9]/g, '_')}_${new Date().toISOString().split('T')[0]}.csv`;
+                link.setAttribute('download', fileName);
+                link.style.visibility = 'hidden';
+                document.body.appendChild(link);
+                link.click();
+                document.body.removeChild(link);
+                
+                showSuccessModal('Data rekap siswa berhasil diexport ke file CSV!');
+            }
+        }
+
+        // Initialize app
+        document.addEventListener('DOMContentLoaded', function() {
+            // Auto-focus on first input
+            document.getElementById('userName').focus();
+        });
+
+        // Test connectivity to the Apps Script endpoint
+        async function testScriptConnection() {
+            try {
+                updateSyncStatus('syncing');
+                // Use GET to reduce CORS preflight for ping
+                const resp = await fetch(SCRIPT_URL + '?action=ping', { method: 'GET' });
+                const json = await resp.json();
+                if (json && json.success) {
+                    showSuccessModal('Koneksi ke Apps Script berhasil: ' + (json.message || 'OK'));
+                    updateSyncStatus('success');
+                } else {
+                    showSuccessModal('Koneksi ke Apps Script merespons, tetapi success!=true. Response: ' + JSON.stringify(json));
+                    updateSyncStatus('error');
+                }
+            } catch (err) {
+                console.error('testScriptConnection error:', err);
+                showSuccessModal('Gagal terhubung ke Apps Script. Periksa URL deploy dan akses (CORS). Error: ' + err.message);
+                updateSyncStatus('error');
+            }
+        }
+
+        // Send single entry using form-encoded payload to reduce CORS preflight
+        async function sendEntryToScript(entry) {
+            try {
+                updateSyncStatus('syncing');
+                const payload = { action: 'addJournal', data: entry };
+                const form = new URLSearchParams();
+                form.append('payload', JSON.stringify(payload));
+
+                const resp = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: form.toString()
+                });
+
+                const result = await resp.json();
+                if (result && result.success) {
+                    entry.synced = true;
+                    localStorage.setItem('journalData', JSON.stringify(journalData));
+                    updateSyncStatus('success');
+                    return true;
+                } else {
+                    updateSyncStatus('error');
+                    return false;
+                }
+            } catch (err) {
+                console.error('sendEntryToScript error:', err);
+                updateSyncStatus('error');
+                return false;
+            }
+        }
+
+        // Send entries as a batch to the Apps Script (use when many unsynced)
+        async function sendBatchToScript(entries) {
+            try {
+                updateSyncStatus('syncing');
+                const payload = { action: 'syncAllSheets', journalData: entries };
+                const form = new URLSearchParams();
+                form.append('payload', JSON.stringify(payload));
+
+                const resp = await fetch(SCRIPT_URL, {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+                    body: form.toString()
+                });
+
+                const json = await resp.json();
+                if (json && json.success) {
+                    // mark entries as synced
+                    entries.forEach(e => { e.synced = true; });
+                    localStorage.setItem('journalData', JSON.stringify(journalData));
+                    updateSyncStatus('success');
+                    return true;
+                } else {
+                    updateSyncStatus('error');
+                    return false;
+                }
+            } catch (err) {
+                console.error('sendBatchToScript error:', err);
+                updateSyncStatus('error');
+                return false;
+            }
+        }
+    </script>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'989994e7b36981c2',t:'MTc1OTYzMjMxMy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
